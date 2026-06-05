@@ -1,0 +1,10 @@
+body {
+    background-color: #fecc356; /* cambiamos el color de fondo */
+}
+
+p {
+    line-height: 25px; /* espaciado entre lineas */
+    font-size: 17px; /* tamaño de fuente */
+} 
+
+.contenedor 
