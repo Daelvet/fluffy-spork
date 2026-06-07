@@ -1,10 +1,90 @@
+/* estilos principales */
+
 body {
-    background-color: #fec356; /* cambiamos el color de fondo */
+  background-color: #fec356; /* cambiamos el color de fondo */
 }
 
+/* estilo general de los parrafos */
 p {
-    line-height: 25px; /* espaciado entre lineas */
-    font-size: 17px; /* tamaño de fuente */
-} 
+  line-height: 25px; /* espaciado entre lineas */
+  font-size: 17px; /* tamano de fuente */
+}
 
-.contenedor 
+/* caja central que agrupa todo el contenido */
+.contenedor {
+  width: 1200px; /* ancho fijo del contenedor */
+  margin: 80px auto; /* centra horizontalmente y agrega espacio arriba y abajo */
+}
+
+/* seccion principal blanca */
+.principal {
+  background-color: white; /* fondo blanco para el area de contenido */
+  padding-bottom: 40px; /* espacio interno en la parte inferior */
+}
+
+/* estilo del h1 dentro del titulo */
+.titulo h1 {
+  padding-top: 40px; /* espacio interno arriba del titulo */
+  padding-left: 40px; /* espacio interno a la izquierda del titulo */
+  margin: 0; /* elimina el margen por defecto del h1 */
+}
+
+/* flexbox que organiza el menu y el articulo lado a lado */
+.contenido-principal {
+  display: flex; /* activa flexbox para alinear hijos horizontalmente */
+  padding: 0 40px; /* espacio interno izquierdo y derecho */
+}
+
+/* caja del menu lateral izquierdo */
+.menu {
+  border: solid; /* borde solido alrededor del menu */
+  width: 200px; /* ancho fijo del menu */
+  border-width: 1px; /* grosor del borde */
+}
+
+/* titulo del menu */
+.menu h3 {
+  padding: 10px 15px; /* espacio interno arriba/abajo e izquierda/derecha */
+  margin: 0; /* elimina margen por defecto */
+  border-bottom: solid; /* linea separadora debajo del titulo */
+  border-bottom-width: 1px; /* grosor de la linea separadora */
+}
+
+/* elementos de la lista del menu */
+.menu-contenido li {
+  margin-top: 10px; /* espacio entre cada item de la lista */
+}
+
+/* contenedor de la card informativa */
+.card {
+  border: solid; /* borde solido alrededor de la card */
+  border-width: 1px; /* grosor del borde */
+  background-color: #f4f3f4; /* fondo gris claro */
+  padding: 5px; /* espacio interno general */
+}
+
+/* titulo de la card */
+.card h2 {
+  background-color: #ffc500; /* fondo amarillo para el encabezado */
+  margin: 0; /* elimina margen por defecto */
+  padding: 6px; /* espacio interno alrededor del texto */
+  text-align: center; /* centra el texto horizontalmente */
+}
+
+/* contenedor de imagen y texto dentro de la card */
+.card-img {
+  padding-top: 6px; /* espacio interno arriba */
+  display: flex; /* activa flexbox para alinear imagen y texto */
+  align-items: center; /* alinea verticalmente al centro */
+}
+
+/* imagen dentro de la card */
+.img {
+  flex-basis: 60%; /* la imagen ocupa el 60% del ancho disponible */
+}
+
+/* texto junto a la imagen en la card */
+.card-img p {
+  margin-left: 3px; /* pequeno espacio entre la imagen y el texto */
+  flex-basis: 40%; /* el texto ocupa el 40% del ancho disponible */
+}
